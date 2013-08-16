@@ -30,6 +30,18 @@ module ActiveAdmin::Mongoid::Document
       scoped
     end
 
+    def ransack *args
+      scoped
+
+      scoped.class.class_eval do 
+        def result
+          self
+        end
+      end
+
+      scoped
+    end
+
     def columns
       @columns ||= fields.map(&:second)
     end
