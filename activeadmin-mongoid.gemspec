@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency 'mongoid',         '~> 5.1'
   gem.add_runtime_dependency 'rails',           '~> 4.1.1'
-  gem.add_runtime_dependency 'activeadmin',     ['>= 0.6.1', '< 2']
+  gem.add_runtime_dependency 'activeadmin',     '~> 1.0.0.pre4'
 
   gem.add_development_dependency 'rspec-rails',  '~> 2.14'
 end
